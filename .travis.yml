@@ -1,4 +1,4 @@
-install: true
+install: false
 before_script:
   - bundle install
   - bundle exec pod install
