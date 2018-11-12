@@ -1,3 +1,4 @@
+install: true
 before_script:
   - bundle install
   - bundle exec pod install
@@ -8,5 +9,5 @@ script:
 matrix:
   include:
     - os: osx
-      #language: objective-c
+      language: objective-c
       osx_image: xcode10.1
