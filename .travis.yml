@@ -1,0 +1,12 @@
+before_script:
+  - bundle install
+  - bundle exec pod install
+
+script:
+  - xcodebuild -workspace DemoCocoapodsCDN.xcworkspace -scheme DemoCocoapodsCDN  -sdk iphonesimulator
+
+matrix:
+  include:
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
