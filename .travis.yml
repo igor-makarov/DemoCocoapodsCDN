@@ -8,5 +8,5 @@ script:
 matrix:
   include:
     - os: osx
-      language: objective-c
+      #language: objective-c
       osx_image: xcode10.1
