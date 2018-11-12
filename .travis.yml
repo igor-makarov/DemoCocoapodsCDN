@@ -1,7 +1,7 @@
 install: false
 before_script:
   - bundle install
-  - bundle exec pod install
+  - bundle exec pod install --verbose
 
 script:
   - xcodebuild -workspace DemoCocoapodsCDN.xcworkspace -scheme DemoCocoapodsCDN  -sdk iphonesimulator
